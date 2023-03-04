@@ -37,7 +37,10 @@ export const email = (args) => {
 
 export const repo = async (args) => {
   setTimeout(function () {
-    window.open("https://github.com/ritikNegi2022/terminal", "_blank");
+    window.open(
+      "https://github.com/ritikNegi2022/Terminal-Protofolio",
+      "_blank"
+    );
   }, 1000);
 
   return "Opening repository...";
