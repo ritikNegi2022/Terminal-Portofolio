@@ -79,22 +79,21 @@ p {
   word-wrap: break-word;
 }
 
-.test {
-  color: #14df9b;
-}
 
 .themeHover {
   position: relative;
+  user-select: none;
 }
-.themeHover > span{
+.themeHover > span {
   cursor: pointer;
 }
-.themeHover > span:hover + .previewImage{
+.themeHover > span:hover + .previewImage {
   display: block;
 }
 .previewImage {
   aspect-ratio: 16/9;
   width: 500px;
+  max-width: 100%;
   object-fit: contain;
   position: absolute;
   display: none;
@@ -104,26 +103,32 @@ p {
   padding: 5px;
 }
 
-.previewImage > div{
+.previewImage > div {
   position: absolute;
   inset: 5px;
   border: 2px solid;
   padding: 5px;
 }
-.previewBanner{
+.previewBanner {
   display: block;
   white-space: pre-wrap;
   font-size: 7px;
 }
-#asciiArt{
+#asciiArt {
   display: block;
   font-size: 1vw;
 }
-@media only screen and (max-width:480px){
-  *{
-    font-size: small;
+@media only screen and (max-width: 480px) and (orientation: portrait) {
+  * {
+    font-size: .837rem;
   }
-  #asciiArt{
+  .historyDisplay{
+    font-size: .5rem;
+  }
+  #asciiArt {
     font-size: 4px;
+  }
+  .previewBanner{
+    font-size: 3px;
   }
 }

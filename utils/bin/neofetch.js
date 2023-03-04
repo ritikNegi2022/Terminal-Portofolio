@@ -67,7 +67,7 @@ ossyNMMMNyMMhsssssssssssssshmmmhssssssso
 `;
 
 const getPlatform = () => {
-  let os = 'Linux';
+  let os;
 
   if (navigator.userAgent.indexOf("Win") != -1) {
     os = "Windows";
