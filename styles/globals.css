@@ -7,6 +7,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 1vw;
 }
 
 #__next {
@@ -116,5 +117,13 @@ p {
 }
 #asciiArt{
   display: block;
-  font-size: 4px;
+  font-size: 1vw;
+}
+@media only screen and (max-width:480px){
+  *{
+    font-size: small;
+  }
+  #asciiArt{
+    font-size: 4px;
+  }
 }
